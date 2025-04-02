@@ -782,8 +782,7 @@ $ git diff me.txt
 ```
 
 :::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Ignoring Things
 
@@ -793,10 +792,12 @@ There are no slides associated with this section.
 Explain the concept of ignoring files with a .gitignore file briefly and direct learners to additional resources.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::: 
+What if we have files that we do not want Git to track for us, like backup files created by our editor or intermediate files created during data analysis? 
+Putting these files under version control would be a waste of disk space. What’s worse, having them all listed could distract us from changes that actually matter, so we can tell Git to ignore them.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+We can do this by creating a file in the root directory of our project called `.gitignore`
 
+As a bonus, using `.gitignore` helps us avoid accidentally adding files to the repository that we don’t want to track.
 
 
 [commit-messages]: https://chris.beams.io/posts/git-commit/
@@ -811,6 +812,7 @@ Explain the concept of ignoring files with a .gitignore file briefly and direct 
 - `git commit` saves the staged content as a new commit in the local repository.
 - `git log` shows the commit history & `git diff` the difference between 2 commits.
 - Write a commit message that accurately describes your changes.
+- Introduce the concept of a `.gitignore` file
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
