@@ -11,7 +11,7 @@
 carpentry: 'incubator'
 
 # Overall title for pages.
-title: 'Collaborative version control with Git and GitHub'
+title: 'Collaborative version control with Git and GitHub - short version'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~
@@ -27,13 +27,13 @@ life_cycle: 'pre-alpha'
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/esciencecenter-digital-skills/git-lesson'
+source: 'https://github.com/Urban-M4/collaborative-git-and-github-short'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'training@esciencecenter.nl'
+contact: 'c.donnelly@esciencecenter.nl'
 
 # Navigation ------------------------------------------------
 #
@@ -64,12 +64,9 @@ episodes:
 - 02-setup.md
 - 03-create.md
 - 04-changes.md
-- 05-history.md
-- 06-ignore.md
-- 07-github.md
-- 08-branches.md
-- 09-collab-centralized.md
-- 10-collab-distributed.md
+- 05-github.md
+- 06-branches.md
+- 07-collab-centralized.md
 
 # Information for Learners
 learners:
