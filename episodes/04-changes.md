@@ -783,6 +783,18 @@ $ git diff me.txt
 
 :::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Ignoring Things
+
+:::::::::::::::::::::::::::::::::::::::: instructor
+There are no slides associated with this section. 
+
+Explain the concept of ignoring files with a .gitignore file briefly and direct learners to additional resources.
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
