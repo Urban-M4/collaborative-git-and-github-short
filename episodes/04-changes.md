@@ -333,11 +333,14 @@ explicitly add things to the staging area, because you might
 commit changes you forgot you made. (Going back to the group photo simile,
 you might get an extra with incomplete makeup walking on
 the stage for the picture because you used `-a`!)
+
+If you do accidentally add a file and you want to undo it, you can use:
+`git restore <filename>` or `git revert <filename>` to do this. 
+However, these functionalities of git are beyond the scope of this course. 
+
 Try to stage things manually,
 or you might find yourself searching for "git undo commit" more
 than you would like!
-
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ![](fig/git-staging-area.svg){alt='The Git Staging Area'}
@@ -794,6 +797,7 @@ $ git diff me.txt
 - Files can be stored in a project's working directory (which users see), the staging area (where the next commit is being built up) and the local repository (where commits are permanently recorded).
 - `git add` puts files in the staging area.
 - `git commit` saves the staged content as a new commit in the local repository.
+- `git log` shows the commit history & `git diff` the difference between 2 commits.
 - Write a commit message that accurately describes your changes.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
