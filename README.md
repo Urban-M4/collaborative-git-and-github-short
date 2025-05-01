@@ -16,8 +16,12 @@ Please help us keep track of all the workshops taught with this material:
 This helps us show the impact of developing open-source lessons to our funders.
 
 ## Carpentries Workbench
-This lesson is a template lesson that uses The Carpentries Workbench.
-Checkout the [documentation of The Carpentries Workbench][workbench] on how to build/serve the lesson locally and how to adapt it.
+This lesson is a template lesson that uses The Carpentries Workbench. How to use and install the workbench can be found [here](https://carpentries.github.io/workbench/).
+Once you have installed the workbench, run the following command in an R shell:
+
+`sandpaper::serve()`
+
+More extensive information on how to build/serve the lesson locally and how to adapt it can be found in the [documentation of The Carpentries Workbench][workbench].
 
 
 [workbench]: https://carpentries.github.io/sandpaper-docs/
