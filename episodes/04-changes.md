@@ -731,72 +731,18 @@ $ git commit -m "Write plans to start a base on Venus"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## `bio` Repository
-
-- Create a new Git repository on your computer called `bio`.
-- Write a three-line biography for yourself in a file called `me.txt`,
-  commit your changes
-- Modify one line, add a fourth line
-- Display the differences
-  between its updated state and its original state.
-
-:::::::::::::::  solution
-
-## Solution
-
-If needed, move out of the `planets` folder:
-
-```bash
-$ cd ..
-```
-
-Create a new folder called `bio` and 'move' into it:
-
-```bash
-$ mkdir bio
-$ cd bio
-```
-
-Initialise git:
-
-```bash
-$ git init
-```
-
-Create your biography file `me.txt` using `nano` or another text editor.
-Once in place, add and commit it to the repository:
-
-```bash
-$ git add me.txt
-$ git commit -m "Add biography file" 
-```
-
-Modify the file as described (modify one line, add a fourth line).
-To display the differences
-between its updated state and its original state, use `git diff`:
-
-```bash
-$ git diff me.txt
-```
-
-:::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Ignoring Things
 
 :::::::::::::::::::::::::::::::::::::::: instructor
-There are no slides associated with this section. 
+## Ignoring Things
 
-Explain the concept of ignoring files with a .gitignore file briefly and direct learners to additional resources.
+This is an optional aside if it comes up or if there is enough time to address it. 
+
+Briefly mention the concept of ignoring files with a .gitignore file and direct learners to additional resources.
+
+Along the lines of "What if we have files that we do not want Git to track for us, like backup files created by our editor or intermediate files created during data analysis? 
+Putting these files under version control would be a waste of disk space. What’s worse, having them all listed could distract us from changes that actually matter, so we can tell Git to ignore them.
+We can do this by creating a file in the root directory of our project called `.gitignore`. As a bonus, using `.gitignore` helps us avoid accidentally adding files to the repository that we don’t want to track."
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::: 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 
 [commit-messages]: https://chris.beams.io/posts/git-commit/
@@ -811,6 +757,7 @@ Explain the concept of ignoring files with a .gitignore file briefly and direct 
 - `git commit` saves the staged content as a new commit in the local repository.
 - `git log` shows the commit history & `git diff` the difference between 2 commits.
 - Write a commit message that accurately describes your changes.
+- Introduce the concept of a `.gitignore` file
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
