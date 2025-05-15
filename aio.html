@@ -861,7 +861,7 @@ per machine.</li>
 </div>
 </div></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p>Last updated on 2025-04-29 |
+<p>Last updated on 2025-05-15 |
 
         <a href="https://github.com/Urban-M4/collaborative-git-and-github-short/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1021,7 +1021,7 @@ the <code>moons</code> subdirectory?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory
 a Git repository because the <code>planets</code> repository can track
@@ -1050,66 +1050,6 @@ as shown above:</p>
 </div>
 </div>
 </div>
-<div id="correcting-git-init-mistakes" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="correcting-git-init-mistakes" class="callout-inner">
-<h3 class="callout-title">Correcting <code>git init</code> Mistakes</h3>
-<div class="callout-content">
-<p>Wolfman explains to Dracula how a nested repository is redundant and
-may cause confusion down the road. Dracula would like to remove the
-nested repository. How can Dracula undo his last <code>git init</code>
-in the <code>moons</code> subdirectory?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Solution – USE WITH CAUTION! </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<div class="section level3">
-<h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
-</h3>
-<p>Removing files from a Git repository needs to be done with caution.
-But we have not learned yet how to tell Git to track a particular file;
-we will learn this in the next episode. Files that are not tracked by
-Git can easily be removed like any other “ordinary” files with</p>
-<div class="codewrapper sourceCode" id="cb13">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> rm filename</span></code></pre>
-</div>
-<p>Similarly a directory can be removed using <code>rm -r dirname</code>
-or <code>rm -rf dirname</code>. If the files or folder being removed in
-this fashion are tracked by Git, then their removal becomes another
-change that we will need to track, as we will see in the next
-episode.</p>
-</div>
-<div class="section level3">
-<h3 id="solution-1">Solution<a class="anchor" aria-label="anchor" href="#solution-1"></a>
-</h3>
-<p>Git keeps all of its files in the <code>.git</code> directory. To
-recover from this little mistake, Dracula can just remove the
-<code>.git</code> folder in the moons subdirectory by running the
-following command from inside the <code>planets</code> directory:</p>
-<div class="codewrapper sourceCode" id="cb14">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span> moons/.git</span></code></pre>
-</div>
-<p>But be careful! Running this command in the wrong directory will
-remove the entire Git history of a project you might want to keep.
-Therefore, always check your current directory using the command
-<code>pwd</code>.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1127,7 +1067,7 @@ directory.</li>
 </div>
 </div></section><section id="aio-04-changes"><p>Content from <a href="04-changes.html">Tracking Changes</a></p>
 <hr>
-<p>Last updated on 2025-04-29 |
+<p>Last updated on 2025-05-15 |
 
         <a href="https://github.com/Urban-M4/collaborative-git-and-github-short/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1940,97 +1880,6 @@ line:</p>
 </div>
 </div>
 </div>
-<div id="bio-repository" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="bio-repository" class="callout-inner">
-<h3 class="callout-title">
-<code>bio</code> Repository</h3>
-<div class="callout-content">
-<ul>
-<li>Create a new Git repository on your computer called
-<code>bio</code>.</li>
-<li>Write a three-line biography for yourself in a file called
-<code>me.txt</code>, commit your changes</li>
-<li>Modify one line, add a fourth line</li>
-<li>Display the differences between its updated state and its original
-state.</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
-<div class="accordion-body">
-<p>If needed, move out of the <code>planets</code> folder:</p>
-<div class="codewrapper sourceCode" id="cb64">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb64-1"><a href="#cb64-1" tabindex="-1"></a><span class="ex">$</span> cd ..</span></code></pre>
-</div>
-<p>Create a new folder called <code>bio</code> and ‘move’ into it:</p>
-<div class="codewrapper sourceCode" id="cb65">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb65-1"><a href="#cb65-1" tabindex="-1"></a><span class="ex">$</span> mkdir bio</span>
-<span id="cb65-2"><a href="#cb65-2" tabindex="-1"></a><span class="ex">$</span> cd bio</span></code></pre>
-</div>
-<p>Initialise git:</p>
-<div class="codewrapper sourceCode" id="cb66">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb66-1"><a href="#cb66-1" tabindex="-1"></a><span class="ex">$</span> git init</span></code></pre>
-</div>
-<p>Create your biography file <code>me.txt</code> using
-<code>nano</code> or another text editor. Once in place, add and commit
-it to the repository:</p>
-<div class="codewrapper sourceCode" id="cb67">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb67-1"><a href="#cb67-1" tabindex="-1"></a><span class="ex">$</span> git add me.txt</span>
-<span id="cb67-2"><a href="#cb67-2" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add biography file"</span> </span></code></pre>
-</div>
-<p>Modify the file as described (modify one line, add a fourth line). To
-display the differences between its updated state and its original
-state, use <code>git diff</code>:</p>
-<div class="codewrapper sourceCode" id="cb68">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb68-1"><a href="#cb68-1" tabindex="-1"></a><span class="ex">$</span> git diff me.txt</span></code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="bio-repository" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<div id="bio-repository" class="callout-inner">
-<h3 class="callout-title">
-<code>bio</code> Repository<em>
-(continued)</em>
-</h3>
-<div class="callout-content">
-<div id="ignoring-things" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="ignoring-things" class="callout-inner">
-<h3 class="callout-title">Ignoring Things</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2053,6 +1902,7 @@ the local repository.</li>
 <code>git log</code> shows the commit history &amp;
 <code>git diff</code> the difference between 2 commits.</li>
 <li>Write a commit message that accurately describes your changes.</li>
+<li>Introduce the concept of a <code>.gitignore</code> file</li>
 </ul>
 </div>
 </div>
@@ -2322,7 +2172,7 @@ shell?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The left-most button (with the picture of a clipboard) copies the
 full identifier of the commit to the clipboard. In the shell,
@@ -2384,7 +2234,7 @@ GitHub record times, and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format
 (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over
@@ -2411,7 +2261,7 @@ push” different from “git commit”?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to
 update it with the changes we’ve made locally (often this corresponds to
@@ -2440,7 +2290,7 @@ happened when you tried to link your local and remote repositories?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories.
 When GitHub creates a README.md file, it performs a commit in the remote
@@ -2732,9 +2582,9 @@ as tools for collaborative development</li>
   "creativeWorkStatus": "active",
   "url": "https://esciencecenter-digital-skills.github.io/git-lesson/aio.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/git-lesson/aio.html",
-  "dateCreated": "2025-04-02",
-  "dateModified": "2025-05-13",
-  "datePublished": "2025-05-13"
+  "dateCreated": "2025-05-15",
+  "dateModified": "2025-05-15",
+  "datePublished": "2025-05-15"
 }
 
   </script><script>

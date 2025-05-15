@@ -328,7 +328,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Creating a Repository</h1>
-        <p>Last updated on 2025-04-29 |
+        <p>Last updated on 2025-05-15 |
 
         <a href="https://github.com/Urban-M4/collaborative-git-and-github-short/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -369,7 +369,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Introduce here the story of Wolfman and Dracula. The examples make
 more sense if you introduce the story. Here we suggest referring to ‘The
@@ -507,7 +507,7 @@ the <code>moons</code> subdirectory?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory
 a Git repository because the <code>planets</code> repository can track
@@ -531,64 +531,6 @@ as shown above:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>fatal: Not a git repository (or any of the parent directories): .git</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="correcting-git-init-mistakes" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="correcting-git-init-mistakes" class="callout-inner">
-<h3 class="callout-title">Correcting <code>git init</code> Mistakes</h3>
-<div class="callout-content">
-<p>Wolfman explains to Dracula how a nested repository is redundant and
-may cause confusion down the road. Dracula would like to remove the
-nested repository. How can Dracula undo his last <code>git init</code>
-in the <code>moons</code> subdirectory?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Solution – USE WITH CAUTION! </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<div class="section level3">
-<h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a></h3>
-<p>Removing files from a Git repository needs to be done with caution.
-But we have not learned yet how to tell Git to track a particular file;
-we will learn this in the next episode. Files that are not tracked by
-Git can easily be removed like any other “ordinary” files with</p>
-<div class="codewrapper sourceCode" id="cb13">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> rm filename</span></code></pre>
-</div>
-<p>Similarly a directory can be removed using <code>rm -r dirname</code>
-or <code>rm -rf dirname</code>. If the files or folder being removed in
-this fashion are tracked by Git, then their removal becomes another
-change that we will need to track, as we will see in the next
-episode.</p>
-</div>
-<div class="section level3">
-<h3 id="solution-1">Solution<a class="anchor" aria-label="anchor" href="#solution-1"></a></h3>
-<p>Git keeps all of its files in the <code>.git</code> directory. To
-recover from this little mistake, Dracula can just remove the
-<code>.git</code> folder in the moons subdirectory by running the
-following command from inside the <code>planets</code> directory:</p>
-<div class="codewrapper sourceCode" id="cb14">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> rm <span class="at">-rf</span> moons/.git</span></code></pre>
-</div>
-<p>But be careful! Running this command in the wrong directory will
-remove the entire Git history of a project you might want to keep.
-Therefore, always check your current directory using the command
-<code>pwd</code>.</p>
 </div>
 </div>
 </div>
@@ -672,9 +614,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://esciencecenter-digital-skills.github.io/git-lesson/instructor/03-create.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/git-lesson/instructor/03-create.html",
-  "dateCreated": "2025-04-02",
-  "dateModified": "2025-04-29",
-  "datePublished": "2025-05-13"
+  "dateCreated": "2025-05-15",
+  "dateModified": "2025-05-15",
+  "datePublished": "2025-05-15"
 }
 
   </script><script>
