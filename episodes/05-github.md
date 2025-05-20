@@ -156,7 +156,7 @@ To https://github.com/vlad/planets.git
  * [new branch]      main -> main
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Proxy
 
@@ -179,7 +179,7 @@ $ git config --global --unset https.proxy
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Password Managers
 
@@ -238,44 +238,14 @@ Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
+:::::::::::::::::::::::::::::::::::::::: instructor
 ## GitHub GUI
-
-Browse to your `planets` repository on GitHub.
-Underneath the Code button, find and click on the text that says "XX commits" (where "XX" is some number).
-Hover over, and click on, the three buttons to the right of each commit.
-What information can you gather/explore from these buttons?
-How would you get that same information in the shell?
-
-:::::::::::::::  solution
-
-## Solution
-
-The left-most button (with the picture of a clipboard) copies the full identifier of the commit
-to the clipboard. In the shell, `git log` will show you the full commit identifier for each
-commit.
-
-When you click on the middle button, you'll see all of the changes that were made in that
-particular commit. Green shaded lines indicate additions and red ones removals. In the shell we
-can do the same thing with `git diff`. In particular, `git diff ID1..ID2` where ID1 and
-ID2 are commit identifiers (e.g. `git diff a3bf1e5..041e637`) will show the differences
-between those two commits.
-
-The right-most button lets you view all of the files in the repository at the time of that
-commit. To do this in the shell, we'd need to restore the files in the repository to that particular
-time. We can do this with `git restore -s ID <files>` where ID is the identifier of the commit
-we want to look at, and `<files>` is the list of files we want to view. To view all files at
-at the time of that commit, you can use `git restore -s ID .`. If we do this, we need to
-remember to put the repository back to the right state afterwards!
-
-
-
-:::::::::::::::::::::::::
+Spend some time showing student around the repository and where to find history on commits etc.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Uploading files directly in GitHub browser
 
@@ -285,30 +255,6 @@ First you can click the "Upload files" button in the toolbar at the top of the
 file tree. Or, you can drag and drop files from your desktop onto the file
 tree. You can read more about this [on this GitHub page](https://help.github.com/articles/adding-a-file-to-a-repository/).
 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## GitHub Timestamp
-
-Create a remote repository on GitHub. Push the contents of your local
-repository to the remote. Make changes to your local repository and push these
-changes. Go to the repo you just created on GitHub and check the
-[timestamps](../learners/reference.md#timestamp) of the files. How does GitHub
-record times, and why?
-
-:::::::::::::::  solution
-
-## Solution
-
-GitHub displays timestamps in a human readable relative format (i.e. "22 hours ago" or "three
-weeks ago"). However, if you hover over the timestamp, you can see the exact time at which the
-last change to the file occurred.
-
-
-
-:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
