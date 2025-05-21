@@ -53,11 +53,6 @@ First we show the centralized workflow all in the browser using Github:
 - PERSON B: Merge the Pull Request
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::: solution
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 :::::::::::::::::::::::::::::::::::::::: keypoints
 * Git and Github are superpowerful, not just for version control, but as tools for collaborative development
 * Do code reviews and be constructive in them!
