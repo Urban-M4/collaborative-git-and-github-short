@@ -1,4 +1,3 @@
-
 ---
 title: Collaborative Version Control - Centralized
 teaching: 60
