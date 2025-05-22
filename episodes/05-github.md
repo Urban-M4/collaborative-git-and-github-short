@@ -279,38 +279,13 @@ Commit only updates your local repository.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## GitHub License and README files
+:::::::::::::::::::::::::::::::::::::::  spoiler
+## Cloning a repository from GitHub
 
 In this episode we learned about creating a remote repository on GitHub, but when you initialized
-your GitHub repo, you didn't add a README.md or a license file. If you had, what do you think
-would have happened when you tried to link your local and remote repositories?
-
-:::::::::::::::  solution
-
-## Solution
-
-In this case, we'd see a merge conflict due to unrelated histories. When GitHub creates a
-README.md file, it performs a commit in the remote repository. When you try to pull the remote
+your GitHub repo, you didn't add a README.md or a license file. If we had, we'd see a merge conflict due to unrelated histories. When GitHub creates a README.md file, it performs a commit in the remote repository. When you try to pull the remote
 repository to your local repository, Git detects that they have histories that do not share a
 common origin and refuses to merge.
-
-```bash
-$ git pull origin main
-```
-
-```output
-warning: no common commits
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
- * branch            main     -> FETCH_HEAD
- * [new branch]      main     -> origin/main
-fatal: refusing to merge unrelated histories
-```
 
 You can force git to merge the two repositories with the option `--allow-unrelated-histories`.
 Be careful when you use this option and carefully examine the contents of local and remote
@@ -320,17 +295,16 @@ repositories before merging.
 $ git pull --allow-unrelated-histories origin main
 ```
 
-```output
-From https://github.com/vlad/planets
- * branch            main     -> FETCH_HEAD
-Merge made by the 'recursive' strategy.
-README.md | 1 +
-1 file changed, 1 insertion(+)
-create mode 100644 README.md
+Another option would be to first create the repository on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) before writing any code and pull the repository locally with:
+
+```bash
+git clone git@github.com:[link-to-repo]
 ```
 
-:::::::::::::::::::::::::
+:::::: instructor
+Take students through the workflow of creating and cloning a repo from GitHub or cloning an existing repository that you want to work with.
 
+::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
