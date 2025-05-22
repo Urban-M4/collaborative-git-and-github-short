@@ -146,6 +146,34 @@ so that we can write a longer message.
 changes made in the commit. Generally, the message should complete the sentence "If applied, this commit will" <commit message here>.
 If you want to go into more detail, add a blank line between the summary line and your additional notes. Use this additional space to explain why you made changes and/or what their impact will be.
 
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Choosing a Commit Message
+
+You are making changes to your code, where you added a new function to calculate the mean. During this you also realise that you made a typo in the use guide. 
+
+Which of the following commit messages would be most appropriate?
+
+1. "Changes"
+2. "Added calc_mean to stats.py and fixed typos"
+3. "Add a function to calculate the mean"
+   "Fix typos in introduction of the user guide"
+
+:::::::::::::::  solution
+
+## Solution
+
+Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
+and answer 2 is redundant to using "git diff" to see what changed in this commit and the commit is combining different changes;
+but answer 3 is good: short, descriptive, and imperative. It also separates the changes into 2 commits
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 If we run `git status` now:
 
 ```bash
@@ -316,7 +344,7 @@ where it keeps track of things that have been added to
 the current [changeset](../learners/reference.md#changeset)
 but not yet committed.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Staging Area
 
@@ -461,7 +489,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
     Start notes on Mars as a base
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Word-based diffing
 
@@ -473,7 +501,7 @@ words using colors.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Paging the Log
 
@@ -492,7 +520,7 @@ screen is a `:`, instead of your usual prompt.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  spoiler
 
 ## Limit Log Size
 
@@ -597,31 +625,6 @@ we first need to add the changed files to the staging area
 repository (`git commit`):
 
 ![](fig/git-committing.svg){alt='The Git Commit Workflow'}
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Choosing a Commit Message
-
-Which of the following commit messages would be most appropriate for the
-last commit made to `mars.txt`?
-
-1. "Changes"
-2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-3. "Discuss effects of Mars' climate on the Mummy"
-
-:::::::::::::::  solution
-
-## Solution
-
-Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
-and answer 2 is redundant to using "git diff" to see what changed in this commit;
-but answer 3 is good: short, descriptive, and imperative.
-
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -757,7 +760,6 @@ We can do this by creating a file in the root directory of our project called `.
 - `git commit` saves the staged content as a new commit in the local repository.
 - `git log` shows the commit history & `git diff` the difference between 2 commits.
 - Write a commit message that accurately describes your changes.
-- Introduce the concept of a `.gitignore` file
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

@@ -70,7 +70,7 @@ metadata make up a [repository](../learners/reference.md#repository).
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  instructor
 
 ## The Long History of Version Control Systems
 

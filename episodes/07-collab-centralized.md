@@ -1,4 +1,3 @@
-
 ---
 title: Collaborative Version Control - Centralized
 teaching: 60
@@ -53,11 +52,6 @@ First we show the centralized workflow all in the browser using Github:
 - PERSON A: Approve the Pull Request
 - PERSON B: Merge the Pull Request
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::: solution
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 * Git and Github are superpowerful, not just for version control, but as tools for collaborative development
