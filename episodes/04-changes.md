@@ -151,21 +151,22 @@ If you want to go into more detail, add a blank line between the summary line an
 
 ## Choosing a Commit Message
 
-Which of the following commit messages would be most appropriate for the
-last commit made to `mars.txt`?
+You are making changes to your code, where you added a new function to calculate the mean. During this you also realise that you made a typo in the use guide. 
+
+Which of the following commit messages would be most appropriate?
 
 1. "Changes"
-2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-3. "Discuss effects of Mars' climate on the Mummy"
+2. "Added calc_mean to stats.py and fixed typos"
+3. "Add a function to calculate the mean"
+   "Fix typos in introduction of the user guide"
 
 :::::::::::::::  solution
 
 ## Solution
 
 Answer 1 is not descriptive enough, and the purpose of the commit is unclear;
-and answer 2 is redundant to using "git diff" to see what changed in this commit;
-but answer 3 is good: short, descriptive, and imperative.
-
+and answer 2 is redundant to using "git diff" to see what changed in this commit and the commit is combining different changes;
+but answer 3 is good: short, descriptive, and imperative. It also separates the changes into 2 commits
 
 
 :::::::::::::::::::::::::
