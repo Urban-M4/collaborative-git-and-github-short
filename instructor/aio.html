@@ -415,7 +415,7 @@ work.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Original lesson material: <a href="https://swcarpentry.github.io/git-novice/" class="external-link uri">https://swcarpentry.github.io/git-novice/</a> Slides: <a href="https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/git-lesson/git-slides" class="external-link uri">https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/git-lesson/git-slides</a>,
 until <a href="https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/git-lesson/git-slides#/4" class="external-link uri">https://esciencecenter-digital-skills.github.io/digital-skills-slides/modules/git-lesson/git-slides#/4</a>.</p>
@@ -464,7 +464,7 @@ among different people.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> The Long History of Version Control Systems </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>Automated version control systems are nothing new. Tools like <a href="https://en.wikipedia.org/wiki/Revision_Control_System" class="external-link">RCS</a>, <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" class="external-link">CVS</a>,
 or <a href="https://en.wikipedia.org/wiki/Apache_Subversion" class="external-link">Subversion</a>
@@ -507,7 +507,7 @@ changes?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li><p>Recovering the excellent version is only possible if you created
@@ -699,64 +699,64 @@ wish. Here are a few examples:</p>
 <col width="27%">
 <col width="72%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th align="left">Editor</th>
 <th align="left">Configuration command</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td align="left">Atom</td>
 <td align="left"><code>$ git config --global core.editor "atom --wait"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">BBEdit (Mac, with command line tools)</td>
 <td align="left"><code>$ git config --global core.editor "bbedit -w"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Sublime Text (Mac)</td>
 <td align="left"><code>$ git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Sublime Text (Win, 32-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Sublime Text (Win, 64-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Notepad (Win)</td>
 <td align="left"><code>$ git config --global core.editor "c:/Windows/System32/notepad.exe"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Notepad++ (Win, 32-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Notepad++ (Win, 64-bit install)</td>
 <td align="left"><code>$ git config --global core.editor "'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Kate (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "kate"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Gedit (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "gedit --wait --new-window"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Scratch (Linux)</td>
 <td align="left"><code>$ git config --global core.editor "scratch-text-editor"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Emacs</td>
 <td align="left"><code>$ git config --global core.editor "emacs"</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Vim</td>
 <td align="left"><code>$ git config --global core.editor "vim"</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">VS Code</td>
 <td align="left"><code>$ git config --global core.editor "code --wait"</code></td>
 </tr>
@@ -896,7 +896,7 @@ per machine.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Introduce here the story of Wolfman and Dracula. The examples make
 more sense if you introduce the story. Here we suggest referring to ‘The
@@ -1035,7 +1035,7 @@ the <code>moons</code> subdirectory?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>No. Dracula does not need to make the <code>moons</code> subdirectory
 a Git repository because the <code>planets</code> repository can track
@@ -1792,24 +1792,24 @@ and then commit the staged changes to the repository
 <li><div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1" aria-label="code-block-52-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1" tabindex="-1" aria-label="code-block-52-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb53">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1" aria-label="code-block-53-1"></a>   <span class="ex">$</span> git init myfile.txt</span>
-<span id="cb53-2"><a href="#cb53-2" tabindex="-1" aria-label="code-block-53-2"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1" tabindex="-1" aria-label="code-block-53-1"></a><span class="ex">$</span> git init myfile.txt</span>
+<span id="cb53-2"><a href="#cb53-2" tabindex="-1" aria-label="code-block-53-2"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb54">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1" aria-label="code-block-54-1"></a>   <span class="ex">$</span> git add myfile.txt</span>
-<span id="cb54-2"><a href="#cb54-2" tabindex="-1" aria-label="code-block-54-2"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb54-1"><a href="#cb54-1" tabindex="-1" aria-label="code-block-54-1"></a><span class="ex">$</span> git add myfile.txt</span>
+<span id="cb54-2"><a href="#cb54-2" tabindex="-1" aria-label="code-block-54-2"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 <li><div class="codewrapper sourceCode" id="cb55">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" tabindex="-1" aria-label="code-block-55-1"></a>   <span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1" tabindex="-1" aria-label="code-block-55-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code></pre>
 </div></li>
 </ol>
 </div>
@@ -2506,7 +2506,7 @@ Github</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Teaching is done as a pair of instructors. Instructor A acts as the
 owner of the repository, instructor B as a collaborator (internal or
@@ -2631,8 +2631,8 @@ as tools for collaborative development</li>
   "url": "https://esciencecenter-digital-skills.github.io/git-lesson/instructor/aio.html",
   "identifier": "https://esciencecenter-digital-skills.github.io/git-lesson/instructor/aio.html",
   "dateCreated": "2025-05-22",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-04-28"
+  "dateModified": "2026-05-05",
+  "datePublished": "2026-05-05"
 }
 
   </script><script>
